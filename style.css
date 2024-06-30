@@ -11,6 +11,23 @@ body {
     padding: 0;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+}
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+
 .align_central {
     display: flex;
     justify-content: center;
@@ -80,6 +97,7 @@ section img:hover {
 
 .container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     height: 80px;
